@@ -7,18 +7,28 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-// POJO Plain old Java
-// PO Persistent Object
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Category {
+@Builder
+public class User {
   private Integer id;
-  private Integer parentId;
-  private String name;
-  private Integer status;
-  private Integer sortOrder;
+
+  private String username;
+
+  private String password;
+
+  private String email;
+
+  private String phone;
+
+  private String question;
+
+  private String answer;
+
+  private Integer role;
+
   private Date createTime;
+
   private Date updateTime;
 }
