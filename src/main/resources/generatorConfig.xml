@@ -40,8 +40,14 @@
     <!--    <table tableName="mall_order_item" domainObjectName="OrderItem" enableCountByExample="false"-->
     <!--           enableDeleteByExample="false"-->
     <!--           enableSelectByExample="false" selectByExampleQueryId="false" enableUpdateByExample="false"/>-->
-    <table tableName="mall_user" domainObjectName="User" enableCountByExample="false"
+    <!--    <table tableName="mall_user" domainObjectName="User" enableCountByExample="false"-->
+    <!--           enableDeleteByExample="false"-->
+    <!--           enableSelectByExample="false" selectByExampleQueryId="false" enableUpdateByExample="false"/>-->
+    <table tableName="mall_product" domainObjectName="Product" enableCountByExample="false"
            enableDeleteByExample="false"
-           enableSelectByExample="false" selectByExampleQueryId="false" enableUpdateByExample="false"/>
+           enableSelectByExample="false" selectByExampleQueryId="false" enableUpdateByExample="false">
+      <columnOverride column="detail" jdbcType="VARCHAR"/>
+      <columnOverride column="sub_images" jdbcType="VARCHAR"/>
+    </table>
   </context>
 </generatorConfiguration>

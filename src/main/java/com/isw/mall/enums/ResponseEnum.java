@@ -14,6 +14,7 @@ public enum ResponseEnum {
   EMAIL_EXIST(4, "email already exists"),
   NEED_LOGIN(10, "user have not logged in, Please login"),
   USERNAME_OR_PASSWORD_ERROR(11, "username or password error"),
+  PRODUCT_OFF_SALE_OR_DELETE(12, "product unavailable"),
   ;
   Integer code;
   String description;
