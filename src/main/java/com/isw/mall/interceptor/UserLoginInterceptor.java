@@ -22,6 +22,8 @@ public class UserLoginInterceptor implements HandlerInterceptor {
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
       throws UserLoginException {
+    String requestURI = request.getRequestURI();
+    log.info("requestURI={}", requestURI);
     log.info("preHandle");
     User user = (User) request.getSession().getAttribute(MallConst.CURRENT_USER);
     if (user == null) {

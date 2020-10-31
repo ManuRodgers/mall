@@ -5,18 +5,18 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserLoginDto {
+public class CartAddProductDto {
 
   //  @NotEmpty for array list set
   //  @NotBlank for string
   //  @NotNull can be null
-  @NotBlank private String username;
+  @NotNull private Integer productId;
 
-  @NotBlank private String password;
+  private Boolean selected = true;
 }
